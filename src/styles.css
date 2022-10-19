@@ -1,0 +1,27 @@
+/*
+GREY - #2f2e2e
+LIGHT GREY - #cfd0cd */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  animation: fade 0.8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    animation: fade 0.8s;
+    opacity: 100%;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+
