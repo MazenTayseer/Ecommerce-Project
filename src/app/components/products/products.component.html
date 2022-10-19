@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<div class="products">
+
+    <ng-container *ngFor="let product of products">
+        <app-product [product]="product"></app-product>
+    </ng-container>
+
+</div>

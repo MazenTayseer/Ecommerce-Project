@@ -1,0 +1,71 @@
+/*
+GREY - #2f2e2e
+LIGHT GREY - #cfd0cd */
+
+footer {
+  height: 400px;
+  background-color: #2f2e2e;
+  padding: 0;
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+
+  margin: 50px 300px;
+  color: white;
+  font-size: 14px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  margin: 50px auto;
+}
+
+input[type="email"] {
+  background-color: #2f2e2e;
+  border: 1px white solid;
+  margin: auto 10px;
+  padding: 10px;
+  width: 250px;
+  color: white;
+
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  color: #2f2e2e;
+  border: none;
+  width: 150px;
+
+  font-size: 14px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  margin: 10px auto;
+}
+
+.social > a {
+  text-decoration: none;
+  color: white;
+  margin: auto 20px;
+  font-size: 20px;
+}
+
+

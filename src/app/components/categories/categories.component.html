@@ -1,0 +1,15 @@
+
+<p>
+    Sneakers and Cream is a place to buy 100% authentic Sneakers and Apparel for the best prices available all over the world.
+    <br>
+    <a routerLink="/shop">Start shopping now!</a>
+</p>
+
+<div class="categories">
+
+    <ng-container *ngFor="let category of categories">
+        <app-category [category]="category"></app-category>
+    </ng-container>
+
+</div>
+

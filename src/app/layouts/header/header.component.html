@@ -1,0 +1,37 @@
+<!-- <h1> Item Name : {{itemName}}</h1>
+<input type="text" [value]="itemName" [disabled]="val"/>
+
+<input [(ngModel)] = "itemName"/>
+
+<button type="button" (click)="enable()">Enable</button> -->
+
+<script>src="/src/app/layouts/header/menu.js"</script>
+
+<div class="color">
+</div>
+
+<header>
+    <div class="left-components">
+
+        <app-menu></app-menu>
+
+        <a id="site-name" routerLink="/">Sneakers And Cream</a>
+
+    </div>
+
+    <div class="right-components">
+        <a routerLink="/cart" class="upper-items">
+            Cart
+            <!-- <section>({{getCartCount()}})</section> -->
+        </a> 
+        <a class="upper-items">Wishlist</a>
+        <a routerLink="/account" id="right-cat" class="upper-items"> <i class="fa fa-user-circle"></i> Account</a>
+    </div>
+
+
+</header>
+
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="product">
+
+        <a routerLink="/detail/{{product.id}}" >
+            <div class="category-content">
+                <img [src]="product.imageUrl" alt="">
+                <section class="name" >
+                    <h4>{{product.name}}</h4>
+                    <h3>{{product.price | currency}}</h3>
+                </section>
+        
+                <!-- <div class="d-flex align-items-center justify-content-center mb-1">
+                    <app-rating [rating]="product.rating"></app-rating>
+                    <small>({{ product.ratingCount }})</small>
+                </div> -->
+            </div>
+        </a>
+
+
+</div>

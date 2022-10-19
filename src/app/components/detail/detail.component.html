@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="name">
+    <section><a routerLink="/Home">Home</a> / <a routerLink="/shop">Shop</a> / {{product.name}}</section>
+    <h2>{{product.name}}</h2>
+    <h5 class="condition">Condition: New</h5>
+  </div>
+
+  <div class="product">
+    <img [src]="product.imageUrl" [alt]="product.name">
+
+    <div class="product-contents">
+      <section class="size">
+        <select name="sizes" id="sizes">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </section>
+
+      <section class="price">
+        <h3>{{product.price | currency}}</h3>
+        <h3>{{product.color}}</h3>
+      </section>
+
+      <section class="cart">
+        <a>Add to Wishlist</a>
+        <a routerLink="" (click)="addToCart(product)">Add to Cart</a>
+      </section>
+
+      <section class="buy">
+        <button type="button">Buy now for {{product.price | currency}}</button>
+      </section>
+
+      <hr>
+
+      <section class="socials">
+        <h4>Share it on :
+          <a routerLink="#" class="fa fa-facebook"></a>
+          <a routerLink="#" class="fa fa-instagram"></a>
+          <a routerLink="#" class="fa fa-twitter"></a>
+          <a routerLink="#" class="fa fa-pinterest"></a>
+          <a routerLink="#" class="fa fa-reddit"></a>
+        </h4>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="desc">
+    <hr>
+    <h2>Product Details</h2>
+
+    <div class="content">
+      <div class="styles-content">
+        <section class="styles">Colorway</section>
+        <section class="styles">Colorway</section>
+      </div>
+
+      <div class="answers">
+        <h4>{{product.color}}</h4>
+        <h4>{{product.color}}</h4>
+      </div>
+
+      <div class="product-description">
+        <h4>Product Description</h4>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

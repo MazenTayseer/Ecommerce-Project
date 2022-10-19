@@ -1,0 +1,60 @@
+<main>
+
+    <section class="route">
+        <a id="static" routerLink="/">Home</a> / <a id="current">Cart</a> 
+    </section>
+
+    <div class="container">
+        <div class="cart-items">
+            <section class="product">
+                <h2>Product</h2>
+                <div *ngFor="let cartline of cartlines"  class="item-details">
+                    <span class="image"><img [src]="cartline.product.imageUrl" [alt]="cartline.product.name"></span>
+                    <span class="name">{{cartline.product.name}}</span>
+                </div>
+            </section>
+    
+            <section class="quantity">
+                <h2>Quantity</h2>
+                <div *ngFor="let cartline of cartlines;let i = index"  class="item-details">
+                    <span class="other">
+                        <a routerLink="/cart" (click)="removeItem(i)" id="minus">-</a> 
+                        <label>{{cartline.count}}</label> 
+                        <a routerLink="/cart" (click)="addItem(i)" id="plus">+</a></span>
+                </div>
+
+            </section>
+    
+            <section class="price">
+                <h2>Price</h2>
+                <div *ngFor="let cartline of cartlines"  class="item-details">
+                    <span class="other">{{cartline.product.price | currency}}</span>
+                </div>
+            </section>
+        </div>
+    
+    
+        <div class="summary">
+            <h2>Summary</h2>
+            <section *ngIf="isItemAdded" class="cost">
+                <h4>Sub-Total = {{getTotal() | currency}}</h4>
+                <h4>Shipping = {{getShipping() | currency}}</h4>
+                <h4 id="tax">Taxes = {{getTaxes() | currency}}</h4>
+                <h1>Total = {{getAllCost() | currency}}</h1>
+            </section>
+
+            <section *ngIf="isItemAdded" class="check">
+                <a routerLink="/checkout">Checkout</a>
+            </section>
+        </div>
+
+    
+    </div>
+
+
+
+
+</main>
+
+
+

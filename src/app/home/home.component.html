@@ -1,0 +1,16 @@
+<app-contact></app-contact>
+
+<app-big-display></app-big-display>
+
+<app-categories></app-categories>
+
+<h1>Featured</h1>
+
+<div class="products">
+  <ng-container *ngFor="let product of getProducts(4)">
+    <app-product [product]="product"></app-product>
+  </ng-container>
+
+</div>
+
+<!--<app-footer></app-footer>-->

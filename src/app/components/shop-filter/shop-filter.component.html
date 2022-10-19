@@ -1,0 +1,45 @@
+<div class="filters">
+
+  <div class="price">
+    <h2 id="filter-price">Filter by price</h2>
+    <div class="inside-filters">
+      <input class="top" type="checkbox" id="AllPrices" (change)="changePrice($event,0,0)" checked="checked">
+      <label for="AllPrices"> All prices</label><br><br>
+
+      <input type="checkbox" id="price1" (change)="changePrice($event,0,100)">
+      <label for="price1"> $0 - $100</label><br><br>
+
+      <input type="checkbox" id="price2" (change)="changePrice($event,100,200)">
+      <label for="price2"> $100 - $200</label><br><br>
+
+      <input type="checkbox" id="price3" (change)="changePrice($event,200,300)">
+      <label for="price3"> $200 - $300</label><br><br>
+
+      <input type="checkbox" id="price4" (change)="changePrice($event,300,400)">
+      <label for="price4"> $300 - $400</label><br><br>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="Brand">
+    <h2>Filter by Brand</h2>
+    <div class="inside-filters">
+      <input class="top" type="checkbox" id="AllBrands" checked="checked">
+      <label for="AllBrands"> All brands</label><br><br>
+
+      <input type="checkbox" id="brand1">
+      <label for="brand1"> Nike</label><br><br>
+
+      <input type="checkbox" id="brand2">
+      <label for="brand2"> Jordan's</label><br><br>
+
+      <input type="checkbox" id="brand3">
+      <label for="brand3"> FOG</label><br><br>
+
+      <input type="checkbox" id="brand4">
+      <label for="brand4"> YEEZY</label><br><br>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+/* 
+GREY - #2f2e2e
+LIGHT GREY - #cfd0cd */
+
+* {
+    color: #2f2e2e;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 140px auto;
+
+    font-size: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #2f2e2e;
+    color: white;
+    width: 40%;
+    padding: 10px;
+
+    transition: 0.5s;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2f2e2e;
+    transition:0.5s;
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 40px;
+    row-gap: 40px;
+
+    text-align: center;
+
+    height: fit-content;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 30px;
+
+}

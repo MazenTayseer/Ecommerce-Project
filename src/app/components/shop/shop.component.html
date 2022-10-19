@@ -1,0 +1,11 @@
+<main>
+  <section class="route">
+    <a id="static" routerLink="/">Home</a> / <a id="current">Shop</a>
+  </section>
+</main>
+
+
+<div class="container">
+  <app-shop-filter (priceEmitter)="changePrice($event)"></app-shop-filter>
+  <app-shop-product [priceList]="priceList"></app-shop-product>
+</div>

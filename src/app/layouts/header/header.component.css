@@ -1,0 +1,90 @@
+/*
+GREY - #2f2e2e
+LIGHT GREY - #cfd0cd */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Space+Grotesk:wght@500&display=swap');
+
+
+.color {
+  height: 90px;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+a {
+  color: #2f2e2e;
+  text-decoration: none;
+}
+
+.left-components {
+  display: flex;
+}
+
+
+#site-name {
+  margin: auto 130px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#site-name:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.right-components {
+  display: flex;
+  margin-right: 40px;
+}
+
+.right-components .upper-items {
+  display: flex;
+  margin: auto 25px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.right-components .upper-items section {
+  margin-left: 5px;
+}
+
+#right-cat {
+  display: flex;
+  margin-right: 60px;
+}
+
+.right-components .upper-items:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+i {
+  margin-right: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+

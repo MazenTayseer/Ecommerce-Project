@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="contact-us">
+    <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
+      <label for="name">
+        NAME
+        <em>&#x2a;</em>
+      </label>
+      <input placeholder="Enter Your Name Here" formControlName="name" id="name" name="customerName" required="required"
+             type="text"/>
+      <p *ngIf="contactForm.controls['name'].errors" class="text-danger">
+        Please enter your name!
+      </p>
+
+      <label for="email">
+        EMAIL
+        <em>&#x2a;</em>
+      </label>
+      <input placeholder="Enter Your Email Here" formControlName="email" id="email" name="customerEmail" required=""
+             type="email"/>
+      <p
+        *ngIf="contactForm.controls['email']?.errors?.['required']"
+        class="text-danger"
+      >
+        Please enter your email!
+      </p>
+      <p
+        *ngIf="contactForm.controls['email']?.errors?.['email']"
+        class="text-danger"
+      >
+        Please enter a valid email!
+      </p>
+
+      <label for="Subject">
+        SUBJECT
+        <em>&#x2a;</em>
+      </label>
+      <input placeholder="Enter The Subject Here" formControlName="subject" id="Subject" name="Subject" type="text"/>
+      <p
+        *ngIf="contactForm.controls['subject'].errors?.['required']"
+        class="text-danger"
+      >
+        Please enter a subject!
+      </p>
+      <p
+        *ngIf="contactForm.controls['subject']?.errors?.['maxlength']"
+        class="text-danger"
+      >
+        Please enter a subject with less than 50 characters!
+      </p>
+
+
+      <label for="message">
+        YOUR MESSAGE
+        <em>&#x2a;</em>
+      </label>
+      <textarea placeholder="Enter Your Message Here" formControlName="message" id="message" name="customerNote"
+                required="" rows="4"></textarea>
+      <p
+        *ngIf="contactForm.controls['message'].errors"
+        class="text-danger-diff"
+      >
+        Please enter a message!
+      </p>
+      <h3>
+        Please provide all the information about your issue you can.
+      </h3>
+      <button>SUBMIT</button>
+    </form>
+  </div>
+</div>
